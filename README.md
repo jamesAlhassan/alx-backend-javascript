@@ -2,6 +2,6 @@
 <span style="color:red">
 JavaScript
 </span>
-<span style="color:white; background-color:red">
+<span style="background-color:red">
 ES6
 </span>
