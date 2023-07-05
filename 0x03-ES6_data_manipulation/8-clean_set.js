@@ -1,11 +1,8 @@
 export default function cleanSet(set, startString) {
-  let res = "";
-  if (!startString || !startString.length) return res;
+  if (!startString || !startString.length) return "";
 
-  [...set].map((item) => {
-    if (item && item.startsWith(startString)) {
-      res += `${item.slice(startString.length)}`;
-    }
-  });
-  return res.slice(0, res.length - 1);
+  return [...set]
+    .filter((item) => (item ? item.startsWith(startString) : ""))
+    .map((item) => (item ? item.slice(startString.length) : ""))
+    .join("-");
 }
