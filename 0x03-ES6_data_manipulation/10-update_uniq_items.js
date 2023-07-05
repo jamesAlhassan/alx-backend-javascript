@@ -10,5 +10,5 @@ export default function updateUniqueItems(map) {
     return map;
   }
 
-  throw new Error("Cannot process");
+  throw new Error('Cannot process');
 }
