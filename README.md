@@ -1,7 +1,8 @@
-<img src="https://www.howtogeek.com/wp-content/uploads/csit/2019/07/9608c9ff.png?width=1198&trim=1,1&bg-color=000&pad=1,1" width = "10    0%" height = "50%"/>
-  3 
-  4 ---
-  5 This repository contains different ES6 JavaScript code. It is provided by the alx software engineering     to the alx students who specilized on backend web development.
+
+<img src="https://www.howtogeek.com/wp-content/uploads/csit/2019/07/9608c9ff.png?width=1198&amp;trim=1,1&amp;bg-color=000&amp;pad=1,1"  width="700" height="300">
+
+
+This repository contains different ES6 JavaScript code. It is provided by the alx software engineering     to the alx students who specilized on backend web development.
 
   ## Projects
 
