@@ -7,7 +7,6 @@ const port = 1245;
 controllerRouting(app);
 
 app.listen(port, () => {
-	console.log(`Listening at http://localhost:${port}`);
 });
 
 export default app;
