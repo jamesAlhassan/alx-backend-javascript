@@ -41,4 +41,20 @@ describe('calculateNumber', function () {
       chai.expect(calculateNumber('SUBTRACT', 4.5, 2)).to.equal(3);
     });
   });
+  describe('SUBTRACT both round', function () {
+    it('should return -4', function () {
+      chai.expect(calculateNumber('SUBTRACT', 1.4, 4.5)).to.equal(-4);
+    });
+  });
 
+  describe('DIVIDE no round', function () {
+    it('should return 2', function () {
+      chai.expect(calculateNumber('DIVIDE', 8, 4)).to.equal(2);
+    });
+  });
+
+  describe('DIVIDE first round', function () {
+    it('should return 5', function () {
+      chai.expect(calculateNumber('DIVIDE', 9.5, 2)).to.equal(5);
+    });
+  });
