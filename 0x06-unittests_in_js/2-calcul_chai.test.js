@@ -24,3 +24,21 @@ describe('calculateNumber', function () {
       chai.expect(calculateNumber('SUM', 1.4, 4.5)).to.equal(6);
     });
   });
+	describe('SUBTRACT no round', function () {
+    it('should return 2', function () {
+      chai.expect(calculateNumber('SUBTRACT', 5, 3)).to.equal(2);
+    });
+  });
+
+  describe('SUBTRACT first round', function () {
+    it('should return -3', function () {
+      chai.expect(calculateNumber('SUBTRACT', 2, 4.5)).to.equal(-3);
+    });
+  });
+
+  describe('SUBTRACT second round', function () {
+    it('should return 3', function () {
+      chai.expect(calculateNumber('SUBTRACT', 4.5, 2)).to.equal(3);
+    });
+  });
+
