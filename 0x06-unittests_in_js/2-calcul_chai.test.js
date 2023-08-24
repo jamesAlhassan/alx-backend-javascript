@@ -13,4 +13,14 @@ describe('calculateNumber', function () {
       chai.expect(calculateNumber('SUM', 2.4, 4)).to.equal(6);
     });
   });
+  describe('SUM second round ', function () {
+    it('should return 6', function () {
+      chai.expect(calculateNumber('SUM', 4, 2.4)).to.equal(6);
+    });
+  });
 
+  describe('SUM both round', function () {
+    it('should return 6', function () {
+      chai.expect(calculateNumber('SUM', 1.4, 4.5)).to.equal(6);
+    });
+  });
