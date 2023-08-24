@@ -58,3 +58,21 @@ describe('calculateNumber', function () {
       chai.expect(calculateNumber('DIVIDE', 9.5, 2)).to.equal(5);
     });
   });
+	describe('DIVIDE second round', function () {
+    it('should return 0.2', function () {
+      chai.expect(calculateNumber('DIVIDE', 2, 9.5)).to.equal(0.2);
+    });
+  });
+
+  describe('DIVIDE both round', function () {
+    it('should return 0.2', function () {
+      chai.expect(calculateNumber('DIVIDE', 1.4, 4.5)).to.equal(0.2);
+    });
+  });
+
+  describe('DIVIDE Error', function () {
+    it('should return Error', function () {
+      chai.expect(calculateNumber('DIVIDE', 1.4, 0)).to.equal('Error');
+    });
+  });
+});
