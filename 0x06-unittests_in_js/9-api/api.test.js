@@ -68,4 +68,31 @@ describe('GET /cart/12', () => {
         url: 'http://localhost:7865/cart/a12',
         method: 'GET',
       };
+ request(options, function (error, response, body) {
+        expect(response.statusCode).to.equal(404);
+        done();
+      });
+    });
+  });
+
+  describe('GET /cart/a12b', () => {
+    it('Responds with 404', (done) => {
+      const options = {
+        url: 'http://localhost:7865/cart/a12b',
+        method: 'GET',
+      };
+
+      request(options, function (error, response, body) {
+        expect(response.statusCode).to.equal(404);
+        done();
+      });
+    });
+  });
+
+  describe('GET /cart/12b', () => {
+    it('Responds with 404', (done) => {
+      const options = {
+        url: 'http://localhost:7865/cart/12b',
+        method: 'GET',
+      };
 
