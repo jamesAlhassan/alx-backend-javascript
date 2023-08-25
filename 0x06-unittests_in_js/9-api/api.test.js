@@ -122,3 +122,9 @@ describe('GET /cart/12', () => {
         url: 'http://localhost:7865/cart/',
         method: 'GET',
       };
+	     request(options, function (error, response, body) {
+        expect(response.statusCode).to.equal(404);
+        done();
+      });
+    });
+  });
