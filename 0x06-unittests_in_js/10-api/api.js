@@ -29,3 +29,8 @@ app.post('/login', (req, res) => {
   res.send(`Welcome ${username}`);
 });
 
+app.listen(PORT, () => {
+  console.log(`API available on localhost port ${PORT}`);
+});
+
+module.exports = app;
